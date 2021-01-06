@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    width: 15vh;
+    height: 80vh;
+    margin: 0 1rem;
+    border-radius: 80px;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease-out;
+}
+
+.image1 {
+    background-image: url("./images/jo-aHLeWkrwlhc-unsplash.jpg");
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url('./images/pure-julia-GWmuaB1WLtw-unsplash.jpg');
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url("./images/georgi-aenski-HxlN_Idkk18-unsplash.jpg");
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url("./images/ilya-orehov-2OSEWkQHiGI-unsplash.jpg");
+    background-size: cover;
+}
+
+.image5 {
+    background-image: url("./images/mari-ganesh-kumar-3BTuyvVTqRo-unsplash.jpg");
+    background-size: cover;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    user-select: none;
+    bottom: 2.5rem;
+    left: 30px;
+    opacity: 0;
+}
+
+.active {
+    flex-grow: 1;
+}
+
+.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
